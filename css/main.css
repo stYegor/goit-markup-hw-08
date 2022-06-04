@@ -323,6 +323,14 @@ img {
 @media screen and (min-width: 1200px) {
   .modal__check-text {
     font-weight: 400;
+    font-size: 11px;
+    line-height: 1.71;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__check-text {
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
   }
