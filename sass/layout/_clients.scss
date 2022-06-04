@@ -1,0 +1,53 @@
+.clients__caption {
+  @include font(700, 28px, 1.17, 0.03em);
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-align: center;
+  justify-content: center;
+  @media screen and (min-width: 1200px) {
+    @include font(700, 36px, 1.16, 0.03em);
+    margin-bottom: 50px;
+  }
+}
+
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -30px;
+  margin-left: -15px;
+  margin-right: -15px;
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+}
+
+.clients-list__item {
+  margin-left: 15px;
+  margin-right: 15px;
+  width: calc(100% / 2 - 30px);
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 3 - 30px);
+  }
+}
+
+.clients-list__link {
+  height: 92px;
+  border: 1px solid var(--icon-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+  fill: var(--icon-color);
+  @include align-list;
+  transition: fill var(--transition-timing-function),
+    border-color var(--transition-timing-function);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}
+
+.clients-list__link:hover .clients-list__item {
+  fill: var(--accent-color);
+}

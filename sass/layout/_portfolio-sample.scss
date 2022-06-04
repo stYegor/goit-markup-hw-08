@@ -1,0 +1,88 @@
+.portfolio-sample {
+  display: block;
+  margin-bottom: -30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+
+.portfolio-sample__item {
+  // margin-right: 30px;
+  margin-bottom: 30px;
+  &:nth-child(1) .portfolio-sample__information {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      padding-bottom: 56px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(100% / 2 - 30px);
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(100% / 3 - 30px);
+  }
+}
+
+.portfolio-sample__link {
+  display: block;
+  background: var(--primary-white-color);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    & .portfolio-sample__overlay {
+      transform: translateY(0);
+    }
+  }
+}
+
+.portfolio-sample__name {
+  margin-top: 0;
+  margin-bottom: 4px;
+  @include font(700, 18px, 2, 0.06em);
+  color: var(--main-text-color);
+}
+
+.portfolio-sample__type {
+  margin-top: 0;
+  margin-bottom: 0;
+  @include font(400, 16px, 1.87, 0.03em);
+  color: var(--secondary-text-color);
+}
+
+.portfolio-sample__thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-sample__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform var(--transition-timing-function);
+}
+
+.portfolio-sample__overlay-text {
+  @include font(400, 18px, 1.55, 0.03em);
+  color: var(--primary-white-color);
+  padding: 63px 24px;
+  margin: 0;
+}
+
+.portfolio-sample__information {
+  padding: 20px 24px;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}

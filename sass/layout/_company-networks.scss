@@ -1,0 +1,36 @@
+.company-networks__list {
+  display: flex;
+  justify-content: center;
+}
+
+.company-networks__item + .company-networks__item {
+  margin-left: 10px;
+}
+
+.company-networks__icon {
+  fill: var(--primary-white-color);
+}
+
+.company-networks__text {
+  margin-top: 0;
+  margin-bottom: 20px;
+  @include font(700, 14px, 1.14, 0.03em);
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+}
+
+.company-networks__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  @include align-list;
+  transition: background-color var(--transition-timing-function);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}

@@ -1,0 +1,39 @@
+.menu-list {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.menu-list__link--current {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    display: block;
+    background-color: var(--accent-color);
+  }
+}
+
+.menu-list__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.menu-list__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  @include font(500, 14px, 1.14, 0.02em);
+  color: inherit;
+  transition: color var(--transition-timing-function);
+  &:hover,
+  &:focus,
+  &:active,
+  &--current {
+    color: var(--accent-color);
+  }
+}
