@@ -481,11 +481,15 @@ img {
   color: var(--accent-color);
 }
 
+.mobile-menu__link--current {
+  color: var(--accent-color);
+}
+
 .mobile-menu__tel {
   display: block;
   margin-bottom: 32px;
   font-weight: 500;
-  font-size: 34px;
+  font-size: 30px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
@@ -544,7 +548,7 @@ img {
   font-size: 3vw;
   line-height: 1.12;
   letter-spacing: 0.02em;
-  color: var(--secondary-text-color);
+  color: var(--accent-color);
   -webkit-transition: color var(--transition-timing-function);
   transition: color var(--transition-timing-function);
 }

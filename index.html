@@ -68,7 +68,7 @@
         </button>
         <ul class="mobile-menu__list list">
             <li class="mobile-menu__item">
-              <a href="./index.html" class="mobile-menu__link link">Студия</a>
+              <a href="./index.html" class="mobile-menu__link mobile-menu__link--current link">Студия</a>
             </li>
             <li class="mobile-menu__item">
               <a href="./portfolio.html" class="mobile-menu__link link">Портфолио</a>
@@ -176,6 +176,7 @@
             <li class="skills-list__item">
               <div class="skills-list__example">
                 <img
+                  srcset="./images/img1.jpg 1x, ./images/img1-2x.jpg 2x"
                   src="./images/img1.jpg"
                   alt="Десктопное приложение"
                   width="370"
@@ -186,6 +187,7 @@
             <li class="skills-list__item">
               <div class="skills-list__example">
                 <img
+                  srcset="./images/img2.jpg 1x, ./images/img2-2x.jpg 2x"
                   src="./images/img2.jpg"
                   alt="Мобильное приложение"
                   width="370"
@@ -196,6 +198,7 @@
             <li class="skills-list__item">
               <div class="skills-list__example">
               <img
+                srcset="./images/img3.jpg 1x, ./images/img3-2x.jpg 2x"
                 src="./images/img3.jpg"
                 alt="Дизайнерские задачи"
                 width="370"
@@ -211,12 +214,30 @@
           <h2 class="staff__caption">Наша команда</h2>
           <ul class="staff-list list">
             <li class="staff-list__item">
-              <img
-              srcset="./images/img4.jpg 1x, ./images/img4-2x.jpg 2x"
-              src="./images/img4.jpg"
+              <picture>
+                <source 
+                srcset="
+                ./images/staff-img/desctop-size/img1.jpg 1x, 
+                ./images/staff-img/desctop-size/img1-2x.jpg 2x"
+                media="(min-width:1200px)"
+                >
+                <source 
+                srcset="
+                ./images/staff-img/tablet-size/img1.jpg 1x, 
+                ./images/staff-img/tablet-size/img1-2x.jpg 2x"
+                media="(min-width:768px)"
+                >
+                <source 
+                srcset="
+                ./images/staff-img/mobile-size/img1.jpg 1x, 
+                ./images/staff-img/mobile-size/img1-2x.jpg 2x"
+                media="(min-width:320px)"
+                >
+                <img
+                src="./images/staff-img/tablet-size/img1.jpg"
                 alt="Первый член команды"
-                width="270"
               />
+              </picture>
               <div class="staff-list__information">
                 <h3 class="staff-list__name">Игорь Демьянченко</h3>
                 <p class="staff-list__position">Product Designer</p>
@@ -253,12 +274,30 @@
               </div>
             </li>
             <li class="staff-list__item">
-              <img
-              srcset="./images/img5.jpg 1x, ./images/img5-2x.jpg 2x"
-              src="./images/img5.jpg"
-                alt="Второй член команды"
-                width="270"
+              <picture>
+                <source 
+                srcset="
+                ./images/staff-img/desctop-size/img2.jpg 1x, 
+                ./images/staff-img/desctop-size/img2-2x.jpg 2x"
+                media="(min-width:1200px)"
+                >
+                <source 
+                srcset="
+                ./images/staff-img/tablet-size/img2.jpg 1x, 
+                ./images/staff-img/tablet-size/img2-2x.jpg 2x"
+                media="(min-width:768px)"
+                >
+                <source 
+                srcset="
+                ./images/staff-img/mobile-size/img2.jpg 1x, 
+                ./images/staff-img/mobile-size/img2-2x.jpg 2x"
+                media="(min-width:320px)"
+                >
+                <img
+                src="./images/staff-img/tablet-size/img2.jpg"
+                alt="Первый член команды"
               />
+              </picture>
               <div class="staff-list__information">
                 <h3 class="staff-list__name">Ольга Репина</h3>
                 <p class="staff-list__position">Frontend Developer</p>
@@ -295,12 +334,30 @@
               </div>
             </li>
             <li class="staff-list__item">
-              <img
-              srcset="./images/img6.jpg 1x, ./images/img6-2x.jpg 2x"
-              src="./images/img6.jpg"
-                alt="Третий член команды"
-                width="270"
+              <picture>
+                <source 
+                srcset="
+                ./images/staff-img/desctop-size/img3.jpg 1x, 
+                ./images/staff-img/desctop-size/img3-2x.jpg 2x"
+                media="(min-width:1200px)"
+                >
+                <source 
+                srcset="
+                ./images/staff-img/tablet-size/img3.jpg 1x, 
+                ./images/staff-img/tablet-size/img3-2x.jpg 2x"
+                media="(min-width:768px)"
+                >
+                <source 
+                srcset="
+                ./images/staff-img/mobile-size/img3.jpg 1x, 
+                ./images/staff-img/mobile-size/img3-2x.jpg 2x"
+                media="(min-width:320px)"
+                >
+                <img
+                src="./images/staff-img/tablet-size/img3.jpg"
+                alt="Первый член команды"
               />
+              </picture>
               <div class="staff-list__information">
                 <h3 class="staff-list__name">Николай Тарасов</h3>
                 <p class="staff-list__position">Marketing</p>
@@ -337,12 +394,30 @@
               </div>
             </li>
             <li class="staff-list__item">
-              <img
-              srcset="./images/img7.jpg 1x, ./images/img7-2x.jpg 2x"
-              src="./images/img7.jpg"
-                alt="Четвертый член команды"
-                width="270"
+              <picture>
+                <source 
+                srcset="
+                ./images/staff-img/desctop-size/img4.jpg 1x, 
+                ./images/staff-img/desctop-size/img4-2x.jpg 2x"
+                media="(min-width:1200px)"
+                >
+                <source 
+                srcset="
+                ./images/staff-img/tablet-size/img4.jpg 1x, 
+                ./images/staff-img/tablet-size/img4-2x.jpg 2x"
+                media="(min-width:768px)"
+                >
+                <source 
+                srcset="
+                ./images/staff-img/mobile-size/img4.jpg 1x, 
+                ./images/staff-img/mobile-size/img4-2x.jpg 2x"
+                media="(min-width:320px)"
+                >
+                <img
+                src="./images/staff-img/tablet-size/img4.jpg"
+                alt="Первый член команды"
               />
+              </picture>
               <div class="staff-list__information">
                 <h3 class="staff-list__name">Михаил Ермаков</h3>
                 <p class="staff-list__position">UI Designer</p>
