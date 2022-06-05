@@ -1279,6 +1279,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer__network {
     margin-left: 70px;
+    margin-bottom: 0;
   }
 }
 
@@ -1336,6 +1337,12 @@ img {
 
 .address-list {
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .address-list {
+    margin-bottom: 0;
+  }
 }
 
 .company-networks__list {
@@ -1471,6 +1478,7 @@ img {
     width: 358px;
     margin-right: 12px;
     margin-left: 0;
+    margin-bottom: 0;
   }
 }
 
